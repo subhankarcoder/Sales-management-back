@@ -8,6 +8,7 @@ router.post("/sales-status-upload", async (req, res) => {
   try {
     const newProduct = new SalesStatus({
       added_by: req.body.added_by,
+      product_name: req.body.product_name,
       seller_name: req.body.seller_name,
       visit_status: req.body.visit_status,
       visit_date: req.body.visit_date,
@@ -34,6 +35,7 @@ router.put("/sales-status/:id", async (req, res) => {
     const updatedFields = {
       added_by: req.body.added_by,
       seller_name: req.body.seller_name,
+      product_name: req.body.product_name,
       visit_status: req.body.visit_status,
       visit_date: req.body.visit_date,
       address: req.body.address,

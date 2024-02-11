@@ -6,6 +6,10 @@ const SalesPersonDataSchema = new Schema({
         type: String,
         required: true
     },
+    product_name: {
+        type: String,
+        required: false
+    },
     seller_name: {
         type: String,
         required: true
